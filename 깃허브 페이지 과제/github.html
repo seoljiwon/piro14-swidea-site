@@ -3,27 +3,114 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding:0;
+        }
+        #wrap{
+            width: 100%;
+            height:500px;
+            background-image: url('github background.png');
+            background-size:100%;
+            background-color:rgb(44, 49, 55);
+        }
+    
+        nav img{
+            width:30px;
+            height:30px;
+        }
+        nav li{
+            display:inline-block;
+        }
+
+        #info_box{
+            clear: both;
+            width:370px;
+            height:170px;
+            margin: 0 20px 0 200px;
+            color:whitesmoke;
+            display:inline-block;
+        }
+        #info_box p{
+            font-weight: lighter;
+        }
+        #info_box span{
+            font-weight: bold;
+        }
+        #info_box h1{
+            font-size:40px;
+            font-weight: bold;
+            line-height: 40px;
+            margin: 20px 0 10px 0;
+        }
+        #input_box{
+            width:330px;
+            height:350px;
+            margin: 10px 150px 50px 20px;
+            padding:20px 15px;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+            border-radius:5px;
+            display:inline-block;
+        }
+
+
+        footer img{
+            width: 30%;
+            height:100px;
+            margin:0 50px 0 800px;
+            background-color: whitesmoke;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="" />
-    </header>
-    <nav>
-        why GitHub?
-    </nav>
-    <section>
-        <dev>
-            <h1>Bulit for</h1>
-            <h1>developers</h1>
-            <p>GitHub is a development platform inspired by the 
-                way your work. From open source to business, 
+    <div id="wrap">
+        <nav>
+            <img src="github icon.png" alt="icon"/>
+           <ul>
+                <li>Why GitHub?</li>
+                <li>Team</li>
+                <li>Enterprise</li>
+                <li>Explore</li>
+                <li>Marketplace</li>
+                <li>Pricing</li>
+           </ul>
+           <ul>
+               <li></li>
+               <li>Sign in</li>
+               <li>Sign up</li>
+           </ul>
+        </nav>
+        <section>
+            <div id="info_box">
+                <h1>Bulit for <br/>
+                    developers</h1>
+                <p>GitHub is a development platform inspired by the 
+                way your work. From <span>open source</span> to <span>business</span>, 
                 you can host and review code, manage projects, and 
                 build software alongside 50 milion developers.</p>
-        </dev>
-        <dev>
-            Username <input
-        </dev>
-    </section>
+            </div>
+            <div id="input_box">
+                Username<br />
+                <input /><br />
+                Email<br />
+                <input /><br />
+                Password<br />
+                <input /><br />
+                <p>Make sure it's at least 15 characters OR at least 8 characters including a 
+                    number and a lowercase letter</p>
+                Sign up for GitHub<input type="submit" />
+                <p>By clicking "Sign up for GitHub", you agree to our Teams of Service and 
+                    Privacy Statement. We'll occasionally send you account related emails.
+                </p>
+            </div>        
+        </section>
+    </div>
+    <footer>
+        <img src="github-cartoon-kitty.jpg" alt="image" />
+    </footer>
+    
 
 </body>
 </html>
