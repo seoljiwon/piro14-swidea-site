@@ -16,14 +16,57 @@
             background-color:rgb(44, 49, 55);
         }
     
+        /* nav style */
+        .arrow {
+            border: solid whitesmoke;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        nav{
+            overflow: hidden;
+        }
         nav img{
-            width:30px;
-            height:30px;
+            width:20px;
+            height:20px;
+            float: left;
+        }
+        nav ul:nth-child(1){
+            float: left;
+            color: whitesmoke;
+            margin: 10px 0 0 50px;
+        } 
+        nav ul:nth-child(2){
+            float: right;
+            color: whitesmoke;
+            margin: 10px 50px 0 0;
+        }
+        nav ul:nth-child(2) .search{
+            border: 1px solid #cccccc ;
+            border-radius: 5px;
+            opacity: 0.5;
+        }
+        nav ul:nth-child(2) .signup{
+            border: 1px solid #cccccc;
+            border-radius: 5px;
         }
         nav li{
-            display:inline-block;
+            float: left;
+            list-style:none;
+            color:whitesmoke;
+            font-size: 10px;
+            margin: 20px 10px;
         }
-
+        nav li a{
+            text-decoration: none;
+            color:whitesmoke;
+            font-size: 10px;
+        }
+        /* section style */
         #info_box{
             clear: both;
             width:370px;
@@ -32,56 +75,92 @@
             color:whitesmoke;
             display:inline-block;
         }
+        #info_box h1{
+            font-size:40px;
+            font-weight: bold;
+            line-height: 40px;
+            margin: 50px 0 20px 0;
+        }
         #info_box p{
             font-weight: lighter;
         }
         #info_box span{
             font-weight: bold;
         }
-        #info_box h1{
-            font-size:40px;
-            font-weight: bold;
-            line-height: 40px;
-            margin: 20px 0 10px 0;
-        }
         #input_box{
-            width:330px;
+            width:300px;
             height:350px;
-            margin: 10px 150px 50px 20px;
+            margin: 10px 100px 50px 20px;
             padding:20px 15px;
-            background-color: whitesmoke;
-            border: 1px solid whitesmoke;
+            background-color: white;
+            border: 1px solid white;
             border-radius:5px;
             display:inline-block;
+            font-size:0.8em;
         }
-
-
+        #input_box input{
+            width:290px;
+            height: 30px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        #input_box input:focus{
+            background-color: cornflowerblue;
+        }
+        #input_box p{
+            font-size: 10px;
+        }
+        #input_box span{
+            color:rgb(77, 191, 226);
+        }
+        
+        /* footer style */
         footer img{
-            width: 30%;
-            height:100px;
-            margin:0 50px 0 800px;
             background-color: whitesmoke;
         }
     </style>
 </head>
 <body>
     <div id="wrap">
+
         <nav>
-            <img src="github icon.png" alt="icon"/>
            <ul>
-                <li>Why GitHub?</li>
-                <li>Team</li>
-                <li>Enterprise</li>
-                <li>Explore</li>
-                <li>Marketplace</li>
-                <li>Pricing</li>
+                <li><a href="#" ><img src="github icon.png" alt="icon"/></a></li>
+                <li>Why GitHub?<i class="arrow down"></i>
+                    <select>
+                        <option><a href="#" target="_blank">A</a></option>
+                        <option><a href="#" target="_blank">B</a></option>
+                        <option><a href="#" target="_blank">C</a></option>
+                    </select></li>
+                <li><a href="#" target="_blank">Team</a></li>
+                <li><a href="#" target="_blank">Enterprise</a></li>
+                <li>Explore<i class="arrow down"></i>
+                    <select>
+                        <option><a href="#" target="_blank">A</a></option>
+                        <option><a href="#" target="_blank">B</a></option>
+                        <option><a href="#" target="_blank">C</a></option>
+                    </select></li>
+                <li><a href="#" target="_blank">Marketplace</a></li>
+                <li>Pricing<i class="arrow down"></i>
+                    <select>
+                        <option><a href="#" target="_blank">A</a></option>
+                        <option><a href="#" target="_blank">B</a></option>
+                        <option><a href="#" target="_blank">C</a></option>
+                    </select></li>
            </ul>
            <ul>
-               <li></li>
-               <li>Sign in</li>
-               <li>Sign up</li>
+               <li>
+                    <form class="search" action="#" method="get">
+                        Search GitHub<input type="text" name="query"/>
+                        <input type="submit" />
+                    </form>                  
+               </li>
+               <li class="signin">Sign in</li>
+               <li class="signup">Sign up</li>
            </ul>
         </nav>
+
         <section>
             <div id="info_box">
                 <h1>Bulit for <br/>
@@ -93,24 +172,25 @@
             </div>
             <div id="input_box">
                 Username<br />
-                <input /><br />
+                <input type="text" name="uname"/><br />
                 Email<br />
-                <input /><br />
+                <input type="text" name="uemail"/><br />
                 Password<br />
-                <input /><br />
+                <input type="password" name="upw"/><br />
                 <p>Make sure it's at least 15 characters OR at least 8 characters including a 
-                    number and a lowercase letter</p>
+                    number and a lowercase letter. <span>Learn more.</span></p>
                 Sign up for GitHub<input type="submit" />
-                <p>By clicking "Sign up for GitHub", you agree to our Teams of Service and 
-                    Privacy Statement. We'll occasionally send you account related emails.
+                <p>By clicking "Sign up for GitHub", you agree to our <span>Teams of Service</span> and 
+                    <span>Privacy Statement</span>. We'll occasionally send you account related emails.
                 </p>
             </div>        
         </section>
+
     </div>
+
     <footer>
-        <img src="github-cartoon-kitty.jpg" alt="image" />
+        <img src="#" alt="image" />
     </footer>
-    
 
 </body>
 </html>
