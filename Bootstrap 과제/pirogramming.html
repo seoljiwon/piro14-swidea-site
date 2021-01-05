@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bootstrap Pirogramming14</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/1b5fbe9e8e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/animate.min.css" />
+        <link rel="stylesheet" href="./css/ionicons.min.css" />
+        <link rel="stylesheet" href="./css/styles.css" />    
+        <link rel="stylesheet" href="./css/bootstrap-utilities.css">
+        <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    </head>
+    <body>
+        <nav id="top-nav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>
+                        Pirogramming14</a>
+                </div> 
+                <div class="navbar-collapse collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="page-scroll" href="#one">Intro</a>
+                        </li>
+                        <li>
+                             <a class="page-scroll" href="#two">Highlights</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#three">Gallery</a>
+                        </l>
+                        <li>
+                            <a class="page-scroll" href="#four">Features</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#last">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" title="A Bootstrap exercise"
+                                href="#about-modal">About</a>
+                        </li>
+                    </ul>
+                 </div>
+             </div>
+        </nav>
+        <section class="container-fluid">
+            <div id="first" class="row no-gutters text-center d-flex flex-column justify-content-center" style="height:100vh; background-image: url(https://picsum.photos/1300/1000/?blur=2); ">
+                <h1 class="fs-1 fst-italic">Pirogramming14</h1>
+                <h6 class="fw-lighter">Cheer Up</h6>
+                <a class="mx-auto page-scroll text-decoration-none border rounded-pill p-3 text-light" style="width:10rem" href="#one">Get Started</a>
+            </div>
+            <div id="one" class="bg-primary row no-gutters text-center d-flex flex-column justify-content-center align-items-center" style="height:50vh">
+                <h2 class="text-primary fs-2">Built On The Bootstrap Grid</h2>
+                <br />
+                <div style="width:55rem;">
+                    <p class="px-5 fs-4">Bootstrap's responsive grid comes in 4 sizes or "breakpoints": tiny (xs), small(sm), medium(md) and large(lg). These 4 grid sizes enable
+                        you create responsive layouts that behave accordingly on different devices.
+                    </p>
+                </div>
+               <a class="page-scroll text-decoration-none border rounded-pill p-3 text-dark bg-light" style="width:10rem" href="#three">Learn More</a>
+            </div>
+            <div id="two" class="row no-gutters text-center py-5">
+                <h2 class="text-primary fs-2 m-0">Flexible Layouts</h2>
+                <span class="mb-5"><hr /></span>
+                <div>
+                    <div class="col-lg-4">
+                        <i class="fas fa-desktop fs-6"></i>
+                        <h3 class="fs-2">Responsive</h3>
+                        <p class="fs-5">Your site looks good everywhere</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fab fa-sass fs-6"></i>
+                        <h3 class="fs-2">Customizable</h3>
+                        <p class="fs-5">Easy to theme and customize with SASS</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="far fa-star fs-6"></i>
+                        <h3 class="fs-2">Consistent</h3>
+                        <p class="fs-5">A mature, well-tested, stable codebase</p>
+                    </div>
+                </div>
+            </div>
+            <div id="three" class="row no-gutters d-flex justify-content-center align-items-center">   
+                <!-- <a href="./img1.jpg" data-toggle="modal" class=" d-flex justify-content-center align-items-center"> -->
+                    <img src="./img1.jpg" class="col-4 col-sm-12 p-5" style="width:320px; height:200px" alt="img1">
+                <!-- </a> -->
+                <!-- <a href="./img2.jpg" data-toggle="modal" class=" d-flex justify-content-center align-items-center"> -->
+                    <img src="./img2.jpg" class="col-4 col-sm-12 p-5" style="width:320px; height:200px" alt="img2">
+                <!-- </a> -->
+                <!-- <a href="./img3.jpg" data-toggle="modal" class=" d-flex justify-content-center align-items-center"> -->
+                    <img src="./img3.jpg" class="col-4 col-sm-12 p-5" style="width:320px; height:200px" alt="img3">
+                <!-- </a> -->
+                <!-- <a href="./img4.jpg" data-toggle="modal" class=" d-flex justify-content-center align-items-center"> -->
+                    <img src="./img4.jpg" class="col-4 col-sm-12 p-5" style="width:320px; height:200px" alt="img4">
+                <!-- </a>
+                <a href="./img5.jpg" data-toggle="modal" class=" d-flex justify-content-center align-items-center"> -->
+                    <img src="./img5.jpg" class="col-4 col-sm-12 p-5" style="width:320px; height:200px" alt="img5">
+                <!-- </a>
+                <a href="./img6.jpg" data-toggle="modal" class=" d-flex justify-content-center align-items-center"> -->
+                    <img src="./img6.jpg" class="col-4 col-sm-12 p-5" style="width:320px; height:200px" alt="img6">
+                </a>
+            </div> 
+            <div id="four" class="p-5 row no-gutters text-center d-flex justify-content-center align-items-center">
+                <h2 class="text-primary fs-2">Features</h2>
+                <span><hr /></span>
+                <div style="width:80vh">
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <h3 class="fs-3 text-start">Simple</h3>
+                            <p class="fs-5">What could be easier? Get started fast with bootstrap.
+                                <i class="fs-1 fas fa-bolt text-end"></i>
+                            </p>
+                        </div>
+                       </div>
+                    <span><hr /></span>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <h3 class="fs-3 text-start">Free</h3>
+                            <p class="fs-5">
+                                <i class="fs-1 fas fa-cloud-download-alt text-start"></i>
+                                Yes, please. Grab it for yourself, and make something awesome with this.
+                            </p>
+                        </div>
+                    </div>
+                    <span><hr /></span>
+                    <div class="d-flex justify-content-start">
+                       <div>
+                        <h3 class="fs-3 text-start">Unique</h3>
+                        <p class="fs-5">
+                            Because you don't want your Bootstrap site, to look like a Bootstrap site.
+                            <i class="fs-1 far fa-snowflake text-end"></i>
+                        </p>
+                       </div>
+                    </div>
+                    <span><hr /></span>
+                    <div class="d-flex justify-content-start">
+                       <div>
+                        <h3 class="fs-3 text-start">Popular</h3>
+                        <p class="fs-5">
+                            <i class="fs-1 fas fa-heart text-start"></i>
+                            There's good reason why Bootstrap is the most used frontend framework in the world.
+                        </p>
+                       </div>
+                    </div>
+                    <span><hr /></span>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <h3 class="fs-3 text-start">Tested</h3>
+                            <p class="fs-5">
+                                Bootstrap is matured and well-tested. It's a stable codebase that provides consistency.
+                                <i class="fs-1 fas fa-flask text-end"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="last" class="row no-gutters text-center">
+                <div class="bg-dark">
+                    <h2 class="text-primary fs-2 mb-5">Get Started</h2>
+                    <a href="#" class="page-scroll text-decoration-none border rounded-pill p-3 text-dark bg-light" style="width:10rem;">Free Download</a>
+                    <span><hr /></span>
+                    <br />
+                    <h6 class="fs-5">BOOTSTRAP IS BASED ON THESE STANDARDS</h6>
+                </div>
+                <div class="p-5">
+                    <h2 class="fs-2">Get in Touch</h2>
+                    <span><hr /></span>
+                    <p class="fs-5">We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form action="">
+                        <div class="d-flex justify-content-center">
+                            <input class="m-2 bg-info border-0 rounded-3" type="text" name="name" placeholder="Name"><br/>
+                            <input class="m-2 bg-info border-0 rounded-3" type="email" name="email" placeholder="Email"><br/>
+                            <input class="m-2 bg-info border-0 rounded-3" type="text" name="phone" placeholder="Phone"><br/>
+                        </div>
+                        <textarea class="m-2 bg-info border-0 rounded-3" name="message" id="" cols="68" rows="5">Your message here...</textarea><br/>
+                        <input class="bg-transparent border rounded-pill" type="submit" value="Send"><br/>
+                    </form>
+                </div>
+                <footer class=" d-flex justify-content-around">
+                    <div>
+                        <h6>Information</h6>
+                        <ul class="fs-5 list-unstyled">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Benefits</a></li>
+                            <li><a href="#">Developers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>About</h6>
+                        <ul class="fs-5 list-unstyled">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Teams & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div >
+                        <h6>Stay Posted</h6>
+                        <form class="fs-5" action="">
+                            <input class="m-3 bg-info border-0 rounded-3" type="email" placeholder="Tell us your email"><br/>
+                            <input class="bg-transparent border rounded-pill" type="button" value="Subscribe for updates" onClick="#sub-modal"><br/>    
+                        </form>
+                    </div>
+                    <div>
+                        <h6>Follow</h6>
+                        <ul class="list-unstyled d-flex align-items-center">
+                            <li><i class="fs-1 m-2 fab fa-twitter text-primary"></i></li>
+                            <li><i class="fs-1 m-2 fab fa-facebook-f text-primary"></i></li>
+                            <li><i class="fs-1 m-2 fas fa-basketball-ball text-primary"></i></li>
+                        </ul>
+                        <p class="fs-5 float-end"><a href="#">Bootstrap</a>©2021 Pirogramming14</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="container-fluid d-none" id="about-modal">
+            <h2>피로그래밍14기</h2>
+            <h6>화이팅할게요!이제 시작!</h6>
+            <p>더욱 힘내서 앞으로 남은 시간동안 열심히 해 보기!!!^^</p>
+            <a href="#">Download</a><br/>
+            <button>OK</button>
+        </div>
+        <div class="container-fluid d-none" id="sub-modal">
+            <h2>Nice Job!</h2>
+            <p>You clicked the button, but it doesn't actually go anywhere.</p>
+            <a href="#">Learn more at Bootstrap</a><br/>
+            <button>OK</button>
+        </div>
+        <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+    </body>
+</html>
