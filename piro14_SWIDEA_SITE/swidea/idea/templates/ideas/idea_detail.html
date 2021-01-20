@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block stylesheet %}
+{% endblock stylesheet %}
+
+{% block content %}
+    <div class="main_title">Idea Detail</div>
+    <p class="main_desc">아이디어 세부내용 페이지입니다. 당신이 구현하려 한 아이디어들을 자세히 살펴보세요.</p>
+    <div class="idea_detail_container">
+        <div>
+            <img src="{{idea.image.url}}" alt="이미지" width="20%">
+        </div>
+        <div>{{idea.title}}</div>
+        <p>1)아이디어 관심도:<br/>{{idea.interest}}</p>
+        <P>2)예상 개발 툴:<br/><a href="{% url 'devtool_detail' pk=idea.pk %}">{{idea.devtool}}</a></P>
+        <p>3)아이디어 설명:<br/>{{idea.content}}</p>
+    </div>
+    <div class="idea_button">
+        <a class="delete_btn" href="{% url 'idea_delete' pk=idea.pk %}">삭제</a>
+        <a class="list_btn" href="{% url 'idea_list' %}">목록</a>
+        <a class="edit_btn" href="{% url 'idea_edit' pk=idea.pk %}">수정</a>
+    </div>
+{% endblock content%}

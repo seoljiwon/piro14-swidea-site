@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block stylesheet %}
+{% endblock stylesheet %}
+
+{% block content %}
+    <div class="main_title">Idea Register</div>
+    <p class="main_desc">아이디어 등록 페이지입니다. 당신의 아이디어를 잊지 말고 기록하세요!</p>
+    <form method="POST" action="{% url 'idea_create' %}" enctype="multipart/form-data" class="idea_form" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="submit_btn">Submit</button>
+    </form>
+{% endblock content%}

@@ -1,0 +1,13 @@
+{% load static %}
+{% block stylesheet %}
+{% endblock stylesheet %}
+
+<div class="navbar">
+    <ul>
+        <li><a href="{% url 'idea_list' %}">My SW Idea Manage</a></li>
+        <li><a href="{% url 'idea_create' %}">아이디어 등록</a></li>
+        <li><a href="{% url 'idea_list' %}">아이디어 관리</a></li>
+        <li><a href="{% url 'devtool_create' %}">개발툴 등록</a></li>
+        <li><a href="{% url 'devtool_list' %}">개발툴 관리</a></li>
+    </ul>
+</div>

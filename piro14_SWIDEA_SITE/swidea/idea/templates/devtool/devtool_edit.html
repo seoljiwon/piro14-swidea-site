@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block stylesheet %}
+{% endblock stylesheet %}
+
+{% block content %}
+    <div class="main_title">Idea Detail Update</div>
+    <p class="main_desc">아이디어 세부내용 수정 페이지입니다. 아이디어를 구체화하거나 내용을 변경해보세요.</p>
+    <form method="POST" enctype="multipart/form-data" class="devtool_form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="submit_btn">Submit</button>
+    </form>
+{% endblock content%}
