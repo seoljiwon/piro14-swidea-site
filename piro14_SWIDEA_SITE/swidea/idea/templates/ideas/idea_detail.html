@@ -13,7 +13,7 @@
         </div>
         <div>{{idea.title}}</div>
         <p>1)아이디어 관심도:<br/>{{idea.interest}}</p>
-        <P>2)예상 개발 툴:<br/><a href="{% url 'devtool_detail' pk=idea.pk %}">{{idea.devtool}}</a></P>
+        <P>2)예상 개발 툴:<br/><a href="{% url 'devtool_detail' pk=idea.devtool.pk %}">{{idea.devtool}}</a></P>
         <p>3)아이디어 설명:<br/>{{idea.content}}</p>
     </div>
     <div class="idea_button">
